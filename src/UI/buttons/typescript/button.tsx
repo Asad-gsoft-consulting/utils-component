@@ -1,8 +1,15 @@
-import React from "react";
+import React, { ButtonHTMLAttributes } from "react";
 import { FaSpinner } from "react-icons/fa";
 import clsx from "clsx";
 
-const Button = React.forwardRef(
+interface CustomButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+  icon?: React.ReactNode;
+  loading?: boolean;
+  iconClassName?: string;
+  buttonClassName?: string;
+}
+
+const CustomButton = React.forwardRef<HTMLButtonElement, CustomButtonProps>(
   (
     {
       children,
@@ -48,6 +55,6 @@ const Button = React.forwardRef(
   }
 );
 
-Button.displayName = "Button";
+CustomButton.displayName = "CustomButton";
 
-export default Button;
+export default CustomButton;

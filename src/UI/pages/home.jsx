@@ -1,6 +1,7 @@
 import React from "react";
 import TextInput from "../fields/textInput";
 import SelectInput from "../fields/select";
+import Button from "../buttons/button";
 
 function Home() {
   const handleChange = (e) => {
@@ -30,6 +31,8 @@ function Home() {
         placeholder="Select an option"
         onChange={(e) => handleChange(e)}
       />
+      <h2 className="text-xl font-bold">Button</h2>
+      <Button>Click me</Button>
     </div>
   );
 }
