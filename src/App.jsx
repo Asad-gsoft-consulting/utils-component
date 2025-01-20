@@ -10,20 +10,12 @@ import bgImage from "../src/assets/svg/Group.svg";
 function App() {
   return (
     <Router>
-      <div
-        className="h-auto flex flex-col text-white bg-gray-900 min-h-screen"
-        style={{
-          backgroundImage: `url(${bgImage})`,
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-          backgroundAttachment: "fixed",
-        }}
-      >
+      <div className="h-auto flex flex-col text-white bg-gray-900 min-h-screen">
         {/* Header */}
         <Header />
 
         {/* Main Content: Scrollable */}
-        <main className="flex-1 p-5 ">
+        <main className="flex-1 p-5">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
