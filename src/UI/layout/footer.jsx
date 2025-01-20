@@ -7,9 +7,7 @@ function Footer() {
     <footer className="bg-gray-800 text-white py-6 px-6">
       <div className="text-center mb-4">
         <img src={logo} alt="Footer Logo" className="mx-auto mb-4" />
-        <p className="text-sm">
-          © 2025 Gulf Health Council. All rights reserved.
-        </p>
+        <p className="text-sm">© 2024 Gsoft Consulting. All rights reserved.</p>
       </div>
       <div className="flex justify-center gap-6 text-lg">
         <FaFacebook />

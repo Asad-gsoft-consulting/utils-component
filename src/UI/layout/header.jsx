@@ -18,19 +18,16 @@ function Header() {
           onClick={() => navigate("/")}
         >
           <img src={logo} alt="Medkit Logo" className="h-8 mr-3" />
-          <span className="text-lg font-semibold">Medkit</span>
+          <span className="text-lg font-semibold">Utils</span>
         </div>
 
         {/* Hamburger Menu */}
-        <button
-          className="text-2xl "
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-        >
+        <button className="text-2xl" onClick={() => setIsMenuOpen(!isMenuOpen)}>
           {isMenuOpen ? <FiX /> : <FiMenu />}
         </button>
 
         {/* Desktop Menu */}
-        <nav className="hidden ">
+        <nav className="hidden">
           <NavLink
             to="/"
             className={({ isActive }) =>
@@ -38,14 +35,6 @@ function Header() {
             }
           >
             Home
-          </NavLink>
-          <NavLink
-            to="/appointment"
-            className={({ isActive }) =>
-              isActive ? activeLinkClass : defaultLinkClass
-            }
-          >
-            Appointment
           </NavLink>
           <NavLink
             to="/about"
